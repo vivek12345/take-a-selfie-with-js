@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navigator.mozGetUserMedia ||
     navigator.msGetUserMedia;
 
-  if (!navigator.getMedia) {
+  if (!navigator.mediaDevices) {
     displayErrorMessage(
       "Your browser doesn't have support for the navigator.getUserMedia interface."
     );
